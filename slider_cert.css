@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #5ff0d8;
+  color: white;
+  text-align: center;
+}
+
+/* WRAPPER */
+.cert-wrapper {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.cert-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CONTAINER */
+.cert-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;   /* center horizontal */
+  align-items: center;
+}
+
+/* TRACK */
+.cert-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+}
+
+/* IMAGE */
+.cert-track img {
+  width: 90vw;        /* hampir full layar */
+  max-width: 300px;   /* batas biar gak kegedean di PC */
+  height: 390px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  border: 1px solid white;
+}
+
+/* HOVER EFFECT */
+.cert-track img:hover {
+  transform: none;
+}
+
+
+/* HILANGKAN SCROLLBAR TAPI MASIH BISA SCROLL */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* IE & Edge lama */
+body {
+  -ms-overflow-style: none;
+}
+
+.section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: grey;
+}
+
+.section h2 {
+  margin-left: 29px;
+  width: 93%;
+  padding: 1px 20px;
+  /* background: black; */
+  border-bottom: 5px solid rgb(201, 9, 9);
+}
+
+.section ul li {
+  padding: 0px 120px;
+  color: black;
+  margin-left: 10px;
+  text-align: center;
+  text-align: justify;
+  hyphens: auto;
+  padding-left: 10px;
+}
+
+
+/* ---------- KONTROL ------------ */
+/* UNTUK ATUR TAMPILAN DI LAYAR HP */
+/* =============================== */
+@media (max-width: 768px) {
+  .section h2 { /* untuk pengaturan gars */
+    margin-left: 29px;
+    width: 82%;
+    padding: 1px 20px;
+    /* background: black; */
+    border-bottom: 5px solid rgb(37, 37, 37);
+  }
+
+  .section ul {
+    width: 100%;
+    /* padding: 0 130px; */
+    margin-left: 0px;
+    text-align: left;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .section li {
+    /* margin-left: 10px; */
+    width: 83%;
+    padding: 1px 60px;
+  }
+
+  /* IMAGE */
+  .cert-track img {
+    width: 90vw;        /* hampir full layar */
+    max-width: 170px;   /* batas biar gak kegedean di PC */
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(200,100,0,0.5);
+    border: 1px solid rgb(231, 7, 7);
+  }
+}

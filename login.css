@@ -1,0 +1,157 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(120deg, #111, #333, #111);
+}
+
+/* CARD LOGIN */
+.login-container {
+  width: 420px;
+  background: rgba(255,255,255,0.95);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+/* TITLE */
+.login-container h2 {
+  margin-bottom: 5px;
+  color: #111;
+}
+
+/* SUBTITLE */
+.login-container p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* INPUT */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* BUTTON */
+.login-wrapper button {
+/* .login-container button { */
+  width: 70%;
+  padding: 12px;
+  background: linear-gradient(45deg,
+  #ff3b3b,
+  #535252);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.login-wrapper button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(145deg,
+  blue,
+  #535252, 
+  rgb(238, 84, 84));
+  color: yellow;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2rem;
+  width: 70%;
+}
+
+.balik-mm button {
+  width: 70%;
+  padding: 12px;
+  background: linear-gradient(90deg, 
+  blue,
+  red,
+  yellow,
+  red,
+  blue);
+  color: blue;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.balik-mm button:hover {
+  transform: scale(1.03);
+  width: 70%;
+  padding: 12px;
+  background: linear-gradient(90deg, 
+  rgb(75, 74, 74),
+  rgb(255, 0, 0),
+  rgb(77, 76, 76));
+  color: yellow;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+
+/* UNTUK STYLING ALERT */
+/* =================== */
+#toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BOX NOTIF */
+.toast-item {
+  min-width: 220px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: slideIn 0.3s ease, fadeOut 0.5s ease 3s forwards;
+}
+
+/* TYPE */
+.toast-success {
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+}
+
+.toast-error {
+  background: linear-gradient(45deg, #ff3b3b, #c0392b);
+}
+
+.toast-warning {
+  background: linear-gradient(45deg, #f39c12, #e67e22);
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+  from { transform: translateX(120%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; transform: translateX(120%); }
+}

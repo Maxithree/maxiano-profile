@@ -1,0 +1,367 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg,
+  #e23232,
+  #141414,
+  #dbcdcd);
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: linear-gradient(165deg,
+  rgba(255, 255, 0, 0.795),
+  rgba(88, 87, 87, 0.6),
+  rgb(41, 40, 40),
+  blue);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 255, 0, 0.527);
+}
+
+h1 {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+h2 {
+  color: orange;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn-group {
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: cyan;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: orange;
+  transform: scale(1.05);
+}
+
+#result {
+  margin: 15px 0;
+  color: cyan;
+}
+
+/* LIST */
+.business-list {
+  text-align: left;
+}
+
+.business-item {
+  background: rgba(255,255,255,0.08);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: 0.3s;
+}
+
+.business-item.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.business-item:hover {
+  background: rgba(3, 245, 245, 0.4);
+  transform: scale(1.03);
+}
+
+/* RUNNING TEXT */
+.running {
+  margin-top: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.running span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: jalan 15s linear infinite;
+  color: rgb(217, 255, 0);
+  font-size: 0.9rem;
+}
+
+@keyframes jalan {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+
+
+/* TOMBOL KELUAR DARI FOUNDER MODULE */
+.iframe-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+
+.btn-close {
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  padding: 8px 15px;
+  background: none;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.btn-close:hover {
+  background:  none;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .btn-close {
+    position: absolute;  /* ✅ HP */
+    top: 50px;
+    right: 45px;
+  }
+}
+
+
+/* UNTUK DETAIL MAIN BUSSINES */
+/* -------------------------- */
+.detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+  font-size: 14px;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* saat aktif */
+.business-item.active .detail {
+  max-height: 200px;
+}
+
+
+/* HILANGKAN SCROLLBAR TAPI MASIH BISA SCROLL */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* IE & Edge lama */
+body {
+  -ms-overflow-style: none;
+}
+
+
+/* STYLING VIDEO */
+.btn-video {
+  padding: 8px 8px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-video:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px cyan;
+}
+
+
+.video-wrapper {
+  aspect-ratio: 15 / 10;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 200%;
+  object-fit: cover;
+  border-radius: 13px;
+}
+
+.modal-content {
+  margin-bottom: -10px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 16px;
+  padding: 15px;
+  background: #111;
+}
+
+
+.video-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.video-wrapper {
+  max-width: 600px;
+  margin: auto;
+}
+
+.video-wrapper video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+
+  background: cyan;
+  color: black;
+
+  text-decoration: none; /* hilangkan garis bawah */
+  border: none;          /* samakan dengan button */
+  border-radius: 8px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* 
+.btn-link {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(135deg,
+  #00c6ff,
+  #0072ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: 0.3s;
+} */
+
+.btn-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px red;
+}
+
+/* CLICK EFFECT */
+.btn-link:active {
+  transform: scale(0.95);
+}
+
+
+#companyVideo {
+  pointer-events: none;
+}
+
+/* 
+.kop_testimoni {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+  padding: 8px 16px;
+  background: grey;
+
+  width: fit-content; 
+  margin: 20px auto; 
+
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.2rem;
+} */
+
+
+.kop_testimoni {
+  text-align: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #444, #666);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+
+
+/* ========================= */
+/* Layar ekslusive buat HP   */
+/* ========================= */
+@media (max-width: 768pc) {
+  .btn-video {
+    padding: 8px 8px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .btn-video:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px cyan;
+  }
+
+
+  .video-wrapper {
+    aspect-ratio: 15 / 10;
+  }
+
+  .video-wrapper video {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    border-radius: 13px;
+  }
+
+  .modal-content {
+    margin-bottom: -10px;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 15px;
+    background: #111;
+  }
+}

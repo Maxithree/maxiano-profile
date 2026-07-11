@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile MAXIANO</title>
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <div id="introScreen">
+    <img src="/logo_anthon4.png" class="logo-spin">
+  </div>
+
+  
+  <!-- STATUS ACCESS -->
+  <h1 id="statusText" style="display: none;"></h1>
+
+  <!-- MAIN CONTENT -->
+  <div id="mainContent" class="hidden"></div>
+
+    <div class="card_container">
+      
+      <div class="card">
+        <div class="logo-anthon">
+          <img src="/logo_anthon4.png" alt="logo">
+        </div>
+        
+        <h1 id="profil">PROFILE</h1>
+        <h2 id="nama">Maxiano Venny Steven Ratuntiga</h2>
+        
+        <div class="card-a">
+          <a href="https://wa.me/6281318037367" target="6281318037367" class="cta-wa">
+            For consultation via Whatsup, clik this link 
+            <!-- 💬 Konsultasi Pembuatan Website via WhatsApp -->
+          </a>
+        </div>
+        <br>
+
+        <div class="menu-group">
+          <a class="menu active" onclick="openCV(this)">CURRICULUM VITAE</a>
+          <a class="menu" onclick="openCert(this)">PORTOFILIO</a>
+          <a class="menu" onclick="openFounder(this)">PROFILE COMPANY</a>
+          <a class="menu" onclick="openMarket(this)">........</a>
+          <div class="menu" onclick="openAnthonProject(this)">......</div>
+          <button class="btn-exit" onclick="exitApp()">🚪 EXIT</button>
+        </div>
+
+        <!-- <br> -->
+
+        <div class="running-text">
+          <span>© Reserved 2026 | Maxiano Venny Steven Ratuntiga</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CV -->
+    <div id="cvModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCV()">&times;</span>
+        <iframe src="/cv.html" width="100%" height="500px"></iframe>
+      </div>
+    </div>
+
+    <!-- CERT -->
+    <div id="certModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCert()">&times;</span>
+        <iframe src="/slider_cert.html" width="100%" height="500px"></iframe>
+      </div>
+    </div>
+
+    <!-- FOUNDER -->
+    <div id="founderModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeFounder()">&times;</span>
+        <div id="founderContent"></div>
+      </div>
+    </div>
+
+  </div> 
+
+  <script src="/main.js"></script>
+
+
+</body>
+</html>
