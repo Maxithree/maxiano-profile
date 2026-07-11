@@ -685,12 +685,12 @@ html {
     background: rgb(177, 177, 177);
     margin: 5% auto;
     padding: 15px;
-    max-width: 80%;
+    max-width: 85%;
     width: auto;
     height: 93vh;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 10px;
     animation: fadeIn 0.3s ease;
   }
 
