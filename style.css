@@ -685,9 +685,10 @@ html {
     background: rgb(177, 177, 177);
     margin: 5% auto;
     padding: 15px;
-    max-width: 85%;
+    max-width: 90%;
     width: auto;
-    height: 93vh;
+    max-height: 95vh;
+    height: auto;
     border-radius: 10px;
     overflow: hidden;
     margin-top: 10px;
