@@ -17,11 +17,6 @@ body {
   grey,
   rgb(122, 122, 122),
   black);
- 
-  /* text-align: center; */
-  /* display: flex; */
-  /* justify-content: center; 
-  align-items: center; */
 }
 
 .card_container {
@@ -32,13 +27,14 @@ body {
 }
 
 .card {
-  /* position: relative; */
+  position: relative;
   background: linear-gradient(35deg,
   red,
   blue,
-  yellow,
+  /* yellow, */
   white,
   red);
+  /* background: rgb(172, 170, 170); */
   padding: 100px;
   border-radius: 12px;
   max-width: 500px;
@@ -245,18 +241,19 @@ button:hover {
 
 .modal-content {
   position: relative;
-  background: linear-gradient(90deg,
+  /* background: linear-gradient(90deg,
   rgb(65, 64, 64),
   rgb(255, 0, 0),
   rgb(207, 207, 18),
-  rgb(0, 0, 255)); 
+  rgb(0, 0, 255));  */
+  background: rgb(117, 116, 116);
   margin: 5% auto;
   padding: 30px;
-  width: 80%;
+  width: 90%;
   height: 90vh;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 20px;
   animation: fadeIn 0.3s ease;
 }
 
@@ -312,10 +309,6 @@ html {
   scrollbar-width: none;
 }
 
-/* IE & Edge lama */
-body {
-  -ms-overflow-style: none;
-}
 
 /* TOMBOL KELUAR-EXIT DARI APLIKASI  */
 .btn-exit {
@@ -323,7 +316,6 @@ body {
   padding: 10px 5px;
   width: 45%;
   background: rgb(49, 48, 48);
-  /* background: red; */
   color: white;
   border: none;
   border-radius: 10px;
@@ -395,14 +387,6 @@ body {
   transition: all 0.8s ease;
 }
 
-#mainContent.hidden {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.menu-group {
-  margin-top: auto;
-}
 
 /* --- LOGO ANTHON UNTUK MASUK KE APLIKASI  --- */
 /* -------------------------------------------- */
@@ -443,8 +427,15 @@ body {
 }
 
 
-/* --- LOGO ANTHON UNTUK MASUK KE APLIKASI  --- */
-/* -------------------------------------------- */
+
+
+
+
+
+
+/* -------------------------- */
+/* --- MOBILE RESPONSIVE  --- */
+/* -------------------------- */
 @media (max-width: 768px) {
   #introScreen {
     position: fixed;
@@ -480,26 +471,71 @@ body {
     opacity: 0;
     transition: opacity 0.8s ease;
   }
-}
 
-
-
-
-
-/* ======================================== */
-/*                 KONTROL                  */
-/* UNTUK UKURAN VIDO DI LAYAR HP RESPONSIVE */
-/* ======================================== */
-@media (max-width: 768px) {
     body {
       margin: 0;
       left: 0;
-      background: linear-gradient(360deg,
+      background: linear-gradient(180deg,
       grey,
       red,
       black,
       yellow,
       grey);
+      overflow-x: hidden;
+    }
+
+    .container {
+        width: 10%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 14px;
     }
 
     .card_container {
@@ -511,19 +547,16 @@ body {
     .card {
         /* position: relative; */
         display: flexbox;
-        background: linear-gradient(090deg,
-        rgb(201, 201, 204),
+        background: linear-gradient(90deg,
         rgb(87, 84, 84),
-        rgba(253, 100, 100, 0.616),
         rgb(4, 160, 139),
-        rgb(46, 45, 46),
-        rgb(190, 188, 188));
+        rgb(46, 45, 46));
         color: whitesmoke;
         border: 1px solid rgba(245, 245, 244, 0.938);
         /* margin-top: 50px; */
         margin: 0 auto;
         width: 130%;
-        padding: 70px 0px;
+        padding: 50px 0px;
         
         flex-direction: column;
         justify-content: space-between;
@@ -550,6 +583,7 @@ body {
         font-size: 1.3rem;
         font-style: italic;
         padding: 5px 8px;
+        margin-bottom: 10px;
     }
 
     .card p {
@@ -567,21 +601,6 @@ body {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.342);
-    }
-
-    .modal-content {
-      position: relative;
-      background: linear-gradient(90deg,
-      rgb(128, 127, 127),
-      rgb(14, 14, 12));
-      margin: 5% auto;
-      padding: 30px;
-      width: 80%;
-      /* height: 90vh; */
-      border-radius: 10px;
-      overflow: hidden;
-      margin-top: 20px;
-      animation: fadeIn 0.3s ease;
     }
 
     /* CTA WA MARKETING */
@@ -611,13 +630,8 @@ body {
       background: rgb(32, 245, 216);
       width: 10%;
       padding: 10px;
-      /* display: flexbox; */
-      /* flex-direction: column; */
-      /* justify-content: space-between;
-      align-items: space-between; */
       border-radius: 100%;
     }
-
 
     #videoIntro {
       width: 100%;
@@ -652,24 +666,24 @@ body {
       opacity: 1;
     }
 
-    .card h2 {
+    /* .card h2 {
       margin-bottom: 10px;
-    }
+    } */
 
+
+  .logo-spin {
+    width: 50px;
+    animation: spin 1.8s linear infinite;
+    border-radius: 200px;
+    padding: 5px;
+    width: 8%;
+    background: linear-gradient(130deg,
+    rgb(12, 12, 12),
+    rgb(189, 188, 188),
+    rgb(27, 27, 27));
+    border: 1px solid rgba(255, 255, 0, 0.699);
   }
 
-  @media (max-width: 768) {
-    .running-text {
-      display: block;
-      width: 10px;
-      overflow: hidden;
-    }
-
-    .running-text span {
-      color: yellow !important;
-    }
-
-  }  
-/* END OF INTRO VIDEO FULLSCREEN    */
+}
 
 
