@@ -248,8 +248,9 @@ button:hover {
   rgb(0, 0, 255));  */
   background: rgb(117, 116, 116);
   margin: 5% auto;
-  padding: 30px;
-  width: 90%;
+  padding: 20px;
+  max-width: 85%;
+  width: auto;
   height: 90vh;
   border-radius: 10px;
   overflow: hidden;
@@ -259,8 +260,8 @@ button:hover {
 
 .close {
   position: absolute;   /* ✅ ini yang benar */
-  top: -2px;
-  right: 15px;
+  top: -11px;
+  right: 5px;
   font-size: 45px;
   cursor: pointer;
   color: red;
@@ -431,8 +432,6 @@ html {
 
 
 
-
-
 /* -------------------------- */
 /* --- MOBILE RESPONSIVE  --- */
 /* -------------------------- */
@@ -475,12 +474,12 @@ html {
     body {
       margin: 0;
       left: 0;
-      background: linear-gradient(180deg,
+      /* background: linear-gradient(180deg,
       grey,
       red,
       black,
       yellow,
-      grey);
+      grey); */
       overflow-x: hidden;
     }
 
@@ -555,13 +554,14 @@ html {
         border: 1px solid rgba(245, 245, 244, 0.938);
         /* margin-top: 50px; */
         margin: 0 auto;
-        width: 130%;
-        padding: 50px 0px;
+        /* max-width: 70%; */
+        width: 65%;
+        padding: 40px 0px;
         
         flex-direction: column;
         justify-content: space-between;
         align-items: space-between;
-        /* height: 600px; */
+        height: 610px;
     }
 
     .card h1 {
@@ -666,10 +666,6 @@ html {
       opacity: 1;
     }
 
-    /* .card h2 {
-      margin-bottom: 10px;
-    } */
-
 
   .logo-spin {
     width: 50px;
@@ -682,6 +678,20 @@ html {
     rgb(189, 188, 188),
     rgb(27, 27, 27));
     border: 1px solid rgba(255, 255, 0, 0.699);
+  }
+
+  .modal-content {
+    position: relative;
+    background: rgb(177, 177, 177);
+    margin: 5% auto;
+    padding: 15px;
+    max-width: 80%;
+    width: auto;
+    height: 93vh;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    animation: fadeIn 0.3s ease;
   }
 
 }
