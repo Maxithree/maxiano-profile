@@ -171,13 +171,13 @@ if (sessionStorage.getItem("logout") === "true") {
 
 
 // =========================
-// ANTHON PROJECT
+// ABOUT MY SELF
 // =========================
 window.openAnthonProject = function(el){
 
     setActiveMenu(el,"Anthon Cafe");
 
-    alert("Halaman Project Anthon Cafe sedang dipersiapkan.");
+    alert("Page of About My Self under construct");
 
 };
 
@@ -189,6 +189,6 @@ window.openMarket = function(el){
 
     setActiveMenu(el, "Marketplace");
 
-    alert("Marketplace sedang dipersiapkan.");
+    alert("GiThub PROJECT under construct");
 
 };

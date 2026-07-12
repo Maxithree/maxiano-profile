@@ -543,7 +543,7 @@ html {
         border: 1px solid rgba(245, 245, 244, 0.938);
         /* margin-top: 50px; */
         margin: 0 auto;
-        max-width: 85%;
+        max-width: 93%;
         width: auto;
         padding: 85px 0px;
         
@@ -685,13 +685,12 @@ html {
 
   .btn-exit {
     margin-top: 15px;
-    width: 35%;
+    width: 32%;
     background: rgb(49, 48, 48);
     color: rgb(250, 3, 3);
     border-radius: 10px;
     font-weight: bold;
     font-size: 1.2rem;
   }
-
 
 }

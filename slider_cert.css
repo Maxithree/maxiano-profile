@@ -102,10 +102,10 @@ html {
     max-width: 80%;
     width: auto;
     padding: 5px 20px;
-    /* background: black; */
+    background: black;
     /* border-bottom: 5px solid rgb(37, 37, 37); */
-    
-
+    font-size: 1rem;
+    color: rgb(253, 253, 22);
   }
 
   .section ul {
@@ -118,8 +118,11 @@ html {
   }
 
   .section li {
-    width: 83%;
+    /* background: black; */
+    width: 65%;
     padding: 1px 60px;
+    font-size: 0.9rem;
+    hyphens: auto;
   }
 
   /* IMAGE */
