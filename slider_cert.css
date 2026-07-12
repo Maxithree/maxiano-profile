@@ -1,9 +1,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #5ff0d8;
-  color: white;
+  background: rgb(238, 236, 236);
+  /* background: #5ff0d8; */
+  /* color: white; */
   text-align: center;
+  -ms-overflow-style: none;
 }
 
 /* WRAPPER */
@@ -35,6 +37,7 @@ body {
   display: flex;
   gap: 20px;
   width: max-content;
+  color: black;
 }
 
 /* IMAGE */
@@ -64,11 +67,6 @@ html {
   scrollbar-width: none;
 }
 
-/* IE & Edge lama */
-body {
-  -ms-overflow-style: none;
-}
-
 .section {
   justify-content: center;
   align-items: center;
@@ -96,7 +94,7 @@ body {
 
 
 /* ---------- KONTROL ------------ */
-/* UNTUK ATUR TAMPILAN DI LAYAR HP */
+/* SCREEN RESPONSIVE HP            */
 /* =============================== */
 @media (max-width: 768px) {
   .section h2 { /* untuk pengaturan gars */
