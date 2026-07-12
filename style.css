@@ -207,20 +207,21 @@ button:hover {
 
 
 /* CTA WA MARKETING */
-.cta-wa {
+.card-a a {
+/* .cta-wa { */
   display: block;
   margin: 15px auto;
   padding: 12px;
   width: 90%;
   background: none;
-  color: rgb(15, 15, 250);
   font-weight: bold;
   border-radius: 10px;
   text-align: center;
   border-radius: 1px solid white;
 }
 
-.cta-wa:hover {
+.card-a a:hover {
+/* .cta-wa:hover { */
   background: #1ebe5d;
 }
 
@@ -447,6 +448,7 @@ html {
     z-index: 99999;
   }
 
+
   .logo-spin {
     width: 50px;
     animation: spin 1.8s linear infinite;
@@ -470,14 +472,6 @@ html {
     opacity: 0;
     transition: opacity 0.8s ease;
   }
-
-
-/* 
-    body {
-      margin: 0;
-      left: 0;
-      overflow-x: hidden;
-    } */
 
     .container {
         width: 10%;
@@ -519,10 +513,10 @@ html {
         font-size: 16px;
     }
 
-    .card {
+    /* .card {
         width: 100%;
         margin-bottom: 20px;
-    }
+    } */
 
     .project-grid {
         grid-template-columns: 1fr;
@@ -548,7 +542,6 @@ html {
         rgb(46, 45, 46));
         color: whitesmoke;
         border: 1px solid rgba(245, 245, 244, 0.938);
-        /* margin-top: 50px; */
         margin: 0 auto;
         max-width: 100%;
         width: auto;
@@ -603,14 +596,14 @@ html {
     .card-a a {
       display: inline-block;
       margin: 15px auto;
-      padding: 5px 20px;
-      width: 75%;
+      padding: 9px 60px;
+      width: 70%;
       background: none;
       color: whitesmoke;
       font-weight: bold;
       border-radius: 8px;
       text-align: center;
-      background: rgba(240, 145, 21, 0.164);
+      background: rgba(250, 143, 3, 0.445);
       border-radius: 10px solidrgba(255, 255, 255, 0.253)e;
       /* padding: 4px; */
     }
