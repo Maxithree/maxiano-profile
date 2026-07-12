@@ -102,10 +102,9 @@ html {
   }
 
   .cert-container {
-    /* overflow: hidden; */
-    width: 98%;
-    /* margin-top: 20px; */
-    /* position: relative; */
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
 
     display: flex;
     justify-content: center;   /* center horizontal */
@@ -133,9 +132,9 @@ html {
   }
 
   .section li {
-    /* background: black; */
-    width: 65%;
-    padding: 1px 60px;
+    width:100%;
+    padding:8px 15px;
+    box-sizing:border-box;
     font-size: 1rem;
     hyphens: auto;
     margin-left: 10px;
@@ -168,9 +167,11 @@ html {
     align-items: center;
     text-align: center;
     color: grey;
-    /* background: rgb(172, 168, 168); */
-    width: 97%;
-    margin-left: 10px;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* margin-left: 10px; */
     border-radius: 15px;
   }
 

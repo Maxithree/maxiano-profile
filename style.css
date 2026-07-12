@@ -431,6 +431,11 @@ html {
 /* --- MOBILE RESPONSIVE  --- */
 /* -------------------------- */
 @media (max-width: 768px) {
+  html,
+  body{
+      overflow-x:hidden;
+  }
+
   #introScreen {
     position: fixed;
     inset: 0;
@@ -466,11 +471,13 @@ html {
     transition: opacity 0.8s ease;
   }
 
+
+/* 
     body {
       margin: 0;
       left: 0;
       overflow-x: hidden;
-    }
+    } */
 
     .container {
         width: 10%;
@@ -543,9 +550,9 @@ html {
         border: 1px solid rgba(245, 245, 244, 0.938);
         /* margin-top: 50px; */
         margin: 0 auto;
-        max-width: 94%;
+        max-width: 100%;
         width: auto;
-        padding: 85px 0px;
+        padding: 95px 0px;
         
         flex-direction: column;
         justify-content: space-between;
@@ -674,7 +681,7 @@ html {
     background: rgb(177, 177, 177);
     margin: 5% auto;
     padding: 15px;
-    max-width: 90%;
+    max-width: 100%;
     width: auto;
     height: 93vh;
     border-radius: 10px;
