@@ -42,7 +42,7 @@ body {
 
 /* IMAGE */
 .cert-track img {
-  width: 60vw;        /* hampir full layar */
+  width: 40vw;        /* hampir full layar */
   max-width: 300px;   /* batas biar gak kegedean di PC */
   height: 390px;
   border-radius: 12px;
@@ -147,7 +147,7 @@ html {
   h2 {
     /* background: rgb(151, 78, 78); */
     margin-left: 5px;
-    max-width: 98.5%;
+    max-width: 100%;
     width: auto;
     color: black;
     font-size: 1.4rem;
@@ -157,7 +157,7 @@ html {
 
   /* IMAGE */
   .cert-track img {
-    width: 60vw;        /* hampir full layar */
+    width: 40vw;        /* hampir full layar */
     max-width: 170px;   /* batas biar gak kegedean di PC */
     height: 200px;
     border-radius: 12px;
