@@ -36,13 +36,13 @@ body {
 .cert-track {
   display: flex;
   gap: 20px;
-  width: max-content;
+  /* width: max-content; */
   color: black;
 }
 
 /* IMAGE */
 .cert-track img {
-  width: 90vw;        /* hampir full layar */
+  width: 60vw;        /* hampir full layar */
   max-width: 300px;   /* batas biar gak kegedean di PC */
   height: 390px;
   border-radius: 12px;
@@ -72,6 +72,7 @@ html {
   align-items: center;
   text-align: center;
   color: grey;
+  /* background: red; */
 }
 
 .section h2 {
@@ -93,12 +94,16 @@ html {
 }
 
 
+
+
+
+
 /* ---------- KONTROL ------------ */
 /* SCREEN RESPONSIVE HP            */
 /* =============================== */
 @media (max-width: 768px) {
   body {
-    background: rgb(220, 220, 223);
+    background: rgb(108, 131, 6);
   }
 
   .cert-container {
@@ -118,13 +123,12 @@ html {
     padding: 5px 20px;
     background: black;
     /* border-bottom: 5px solid rgb(37, 37, 37); */
-    font-size: .8rem;
+    font-size: .9rem;
     color: rgb(253, 253, 22);
   }
 
   .section ul {
     width: 100%;
-    /* padding: 0 130px; */
     margin-left: 0px;
     text-align: left;
     text-align: justify;
@@ -138,7 +142,6 @@ html {
     font-size: 1rem;
     hyphens: auto;
     margin-left: 10px;
-    
   }
 
   h2 {
@@ -154,7 +157,7 @@ html {
 
   /* IMAGE */
   .cert-track img {
-    width: 90vw;        /* hampir full layar */
+    width: 60vw;        /* hampir full layar */
     max-width: 170px;   /* batas biar gak kegedean di PC */
     height: 200px;
     border-radius: 12px;
@@ -171,8 +174,11 @@ html {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    /* margin-left: 10px; */
     border-radius: 15px;
+  }
+
+  .section ul li {
+    color: white;
   }
 
   .line-1 {
