@@ -79,7 +79,7 @@ html {
   width: 93%;
   padding: 1px 20px;
   /* background: black; */
-  border-bottom: 5px solid rgb(201, 9, 9);
+  /* border-bottom: 5px solid rgb(201, 9, 9); */
 }
 
 .section ul li {
@@ -98,11 +98,14 @@ html {
 /* =============================== */
 @media (max-width: 768px) {
   .section h2 { /* untuk pengaturan gars */
-    margin-left: 29px;
-    width: 82%;
-    padding: 1px 20px;
+    /* margin-left: 29px; */
+    max-width: 80%;
+    width: auto;
+    padding: 5px 20px;
     /* background: black; */
-    border-bottom: 5px solid rgb(37, 37, 37);
+    /* border-bottom: 5px solid rgb(37, 37, 37); */
+    
+
   }
 
   .section ul {
@@ -115,7 +118,6 @@ html {
   }
 
   .section li {
-    /* margin-left: 10px; */
     width: 83%;
     padding: 1px 60px;
   }
@@ -128,5 +130,20 @@ html {
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(200,100,0,0.5);
     border: 1px solid rgb(231, 7, 7);
+  }
+
+  .section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: grey;
+    /* background: rgb(172, 168, 168); */
+    width: 97%;
+    margin-left: 10px;
+    border-radius: 15px;
+  }
+
+  hr {
+    color: red;
   }
 }
