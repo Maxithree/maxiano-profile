@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: rgb(238, 236, 236);
+  /* background: rgb(238, 236, 236); */
   /* background: #5ff0d8; */
   /* color: white; */
   text-align: center;
@@ -97,14 +97,29 @@ html {
 /* SCREEN RESPONSIVE HP            */
 /* =============================== */
 @media (max-width: 768px) {
+  body {
+    background: rgb(220, 220, 223);
+  }
+
+  .cert-container {
+    /* overflow: hidden; */
+    width: 98%;
+    /* margin-top: 20px; */
+    /* position: relative; */
+
+    display: flex;
+    justify-content: center;   /* center horizontal */
+    align-items: center;
+  }
+
   .section h2 { /* untuk pengaturan gars */
     /* margin-left: 29px; */
-    max-width: 80%;
+    max-width: 85%;
     width: auto;
     padding: 5px 20px;
     background: black;
     /* border-bottom: 5px solid rgb(37, 37, 37); */
-    font-size: 1rem;
+    font-size: .8rem;
     color: rgb(253, 253, 22);
   }
 
@@ -121,8 +136,21 @@ html {
     /* background: black; */
     width: 65%;
     padding: 1px 60px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     hyphens: auto;
+    margin-left: 10px;
+    
+  }
+
+  h2 {
+    /* background: rgb(151, 78, 78); */
+    margin-left: 5px;
+    max-width: 98.5%;
+    width: auto;
+    color: black;
+    font-size: 1.4rem;
+    text-align: center;
+    align-items: center;
   }
 
   /* IMAGE */
@@ -146,7 +174,10 @@ html {
     border-radius: 15px;
   }
 
-  hr {
-    color: red;
+  .line-1 {
+    border: none;
+    height: 2px;
+    background: #143d77;
+    /* margin: 20px 0; */
   }
 }
