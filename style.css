@@ -139,10 +139,6 @@ button:hover {
 .menu:hover {
     font-style: italic;
     font-weight: bold;
-    /* background: greenyellow; */
-    /* background: #d63781; */
-    /* color: black; */
-    /* color: whitesmoke; */
      transform: scale(1.03);
 }
 
@@ -171,9 +167,6 @@ button:hover {
 }
 
 .menu.active:hover{
-  /* background: rgb(49, 48, 48); */
-    /* background: #d63781; */
-    /* color: white; */
     color: black;
     font-style: italic;
     font-weight: normal;
@@ -208,16 +201,17 @@ button:hover {
 
 /* CTA WA MARKETING */
 .card-a a {
-/* .cta-wa { */
   display: block;
   margin: 15px auto;
   padding: 12px;
-  width: 90%;
+  width: 70%;
   background: none;
   font-weight: bold;
   border-radius: 10px;
   text-align: center;
   border-radius: 1px solid white;
+  background: rgba(252, 251, 251, 0.541);
+  color: black;
 }
 
 .card-a a:hover {
@@ -596,8 +590,8 @@ html {
     .card-a a {
       display: inline-block;
       margin: 15px auto;
-      padding: 9px 60px;
-      width: 70%;
+      padding: 9px 20px;
+      width: 50%;
       background: none;
       color: whitesmoke;
       font-weight: bold;

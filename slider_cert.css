@@ -1,9 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  /* background: rgb(238, 236, 236); */
-  /* background: #5ff0d8; */
-  /* color: white; */
+  background: rgb(79, 97, 1);
   text-align: center;
   -ms-overflow-style: none;
 }
@@ -13,6 +11,7 @@ body {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease;
+  
 }
 
 .cert-wrapper.show {
@@ -30,6 +29,7 @@ body {
   display: flex;
   justify-content: center;   /* center horizontal */
   align-items: center;
+  
 }
 
 /* TRACK */
@@ -37,14 +37,19 @@ body {
   display: flex;
   gap: 20px;
   /* width: max-content; */
-  color: black;
+  /* color: black; */
+  color: whitesmoke;
+}
+
+.certify h2 {
+  color: white;
 }
 
 /* IMAGE */
 .cert-track img {
-  width: 40vw;        /* hampir full layar */
-  max-width: 300px;   /* batas biar gak kegedean di PC */
-  height: 390px;
+  width: 150px;        /* hampir full layar */
+  max-width: 200px;   /* batas biar gak kegedean di PC */
+  height: 200px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
   border: 1px solid white;
@@ -79,18 +84,19 @@ html {
   margin-left: 29px;
   width: 93%;
   padding: 1px 20px;
-  /* background: black; */
+  background: black;
   /* border-bottom: 5px solid rgb(201, 9, 9); */
 }
 
 .section ul li {
   padding: 0px 120px;
-  color: black;
+  color: rgb(223, 219, 219);
   margin-left: 10px;
   text-align: center;
   text-align: justify;
   hyphens: auto;
   padding-left: 10px;
+  /* background: white; */
 }
 
 
@@ -103,7 +109,7 @@ html {
 /* =============================== */
 @media (max-width: 768px) {
   body {
-    background: rgb(108, 131, 6);
+    background: rgba(23, 94, 41, 0.925) !important;
   }
 
   .cert-container {
@@ -149,17 +155,21 @@ html {
     margin-left: 5px;
     max-width: 100%;
     width: auto;
-    color: black;
+    color: rgb(119, 42, 42);
     font-size: 1.4rem;
     text-align: center;
     align-items: center;
   }
 
+  .certify h2 {
+    color:rgb(248, 168, 110);
+  }
+  
   /* IMAGE */
   .cert-track img {
-    width: 40vw;        /* hampir full layar */
+    width: 130px;        /* hampir full layar */
     max-width: 170px;   /* batas biar gak kegedean di PC */
-    height: 200px;
+    height: 180px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(200,100,0,0.5);
     border: 1px solid rgb(231, 7, 7);
@@ -183,8 +193,8 @@ html {
 
   .line-1 {
     border: none;
-    height: 2px;
-    background: #143d77;
+    height: 3px;
+    background: #868686;
     /* margin: 20px 0; */
   }
 }
