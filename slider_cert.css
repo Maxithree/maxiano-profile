@@ -167,12 +167,12 @@ html {
   
   /* IMAGE */
   .cert-track img {
-    width: 130px;        /* hampir full layar */
+    width: 120px;        /* hampir full layar */
     max-width: 170px;   /* batas biar gak kegedean di PC */
     height: 180px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(200,100,0,0.5);
-    border: 1px solid rgb(231, 7, 7);
+    border: 1px solid rgba(231, 7, 7, 0.562);
   }
 
   .section {
