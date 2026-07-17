@@ -1,7 +1,12 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: rgb(79, 97, 1);
+  background: linear-gradient(90deg,
+  red,
+  grey,
+  blue
+  );
+  /* background: rgb(153, 180, 34); */
   text-align: center;
   -ms-overflow-style: none;
 }
@@ -109,7 +114,12 @@ html {
 /* =============================== */
 @media (max-width: 768px) {
   body {
-    background: rgba(23, 94, 41, 0.925) !important;
+    background: linear-gradient(90deg,
+    red,
+    grey,
+    blue
+    );
+    /* background: rgba(23, 94, 41, 0.925) !important; */
   }
 
   .cert-container {
