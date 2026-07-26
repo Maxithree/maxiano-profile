@@ -114,22 +114,26 @@ html {
 /* =============================== */
 @media (max-width: 768px) {
   body {
+    margin: 0;
+    width: 100%;
     background: linear-gradient(90deg,
     red,
     grey,
-    blue
+    blue,
+    white
     );
     /* background: rgba(23, 94, 41, 0.925) !important; */
   }
 
   .cert-container {
     overflow: hidden;
-    width: 100%;
+    /* width: 100%; */
     box-sizing: border-box;
 
     display: flex;
     justify-content: center;   /* center horizontal */
     align-items: center;
+    /* height: 80px; */
   }
 
   .section h2 { /* untuk pengaturan gars */
@@ -195,6 +199,7 @@ html {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 15px;
+    /* height: 100px; */
   }
 
   .section ul li {

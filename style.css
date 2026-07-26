@@ -10,9 +10,7 @@ body {
   rgb(146, 145, 145),
   grey,
   green,
-  /* rgb(250, 8, 8), */
   rgb(199, 199, 10),
-  /* red, */
   green,
   grey,
   rgb(122, 122, 122),
@@ -27,11 +25,10 @@ body {
 }
 
 .card {
-  position: relative;
+  position: fixed;
   background: linear-gradient(35deg,
   red,
   blue,
-  /* yellow, */
   white,
   red);
   /* background: rgb(172, 170, 170); */
@@ -224,7 +221,7 @@ button:hover {
   position: fixed;
   left: 0;
   top: 0;
-  margin-top: 0;
+  margin-top: 0px;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.7);
@@ -236,7 +233,7 @@ button:hover {
 
 .modal-content {
   position: relative;
-  background: rgb(117, 116, 116);
+  background: rgb(221, 243, 19);
   margin: 5% auto;
   padding: 20px;
   max-width: 85%;
@@ -244,7 +241,7 @@ button:hover {
   height: 90vh;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 30px;
   animation: fadeIn 0.3s ease;
 }
 
@@ -479,7 +476,7 @@ html {
         text-align: center;
     }
 
-    nav {
+    /* nav {
         flex-direction: column;
         width: 100%;
     }
@@ -487,9 +484,9 @@ html {
     nav a {
         display: block;
         padding: 10px;
-    }
+    } */
 
-    .hero {
+    /* .hero {
         flex-direction: column;
         text-align: center;
     }
@@ -505,16 +502,16 @@ html {
 
     .hero p {
         font-size: 16px;
-    }
+    } */
 
     /* .card {
         width: 100%;
         margin-bottom: 20px;
     } */
 
-    .project-grid {
+    /* .project-grid {
         grid-template-columns: 1fr;
-    }
+    } */
 
     footer {
         text-align: center;
@@ -583,6 +580,7 @@ html {
       top: 0px;
       width: 100%;
       height: 100%;
+      /* background: red; */
       background: rgba(0, 0, 0, 0.342);
     }
 
@@ -665,7 +663,12 @@ html {
 
   .modal-content {
     position: relative;
-    background: rgb(177, 177, 177);
+    background: rgb(248, 235, 46); 
+    /* background: linear-gradient(90deg,
+    red,
+    white,
+    blue
+    ); */
     margin: 5% auto;
     padding: 15px;
     max-width: 100%;
@@ -673,9 +676,17 @@ html {
     height: 93vh;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 17px;
     animation: fadeIn 0.3s ease;
   }
+
+  /* #cvModal {
+    color: red;
+  }
+
+  #certModal {
+    width: 500px;
+  } */
 
   .btn-exit {
     margin-top: 15px;
