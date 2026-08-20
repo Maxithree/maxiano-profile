@@ -28,23 +28,47 @@ body {
 .cert-container {
   overflow: hidden;
   width: 100%;
+  max-width: 100%;
   margin-top: 20px;
   position: relative;
 
   display: flex;
-  justify-content: center;   /* center horizontal */
+  justify-content: center;
   align-items: center;
-  
+
+  box-sizing: border-box;
 }
+
+
+/* .cert-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 /* TRACK */
 .cert-track {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  color: whitesmoke;
+  box-sizing: border-box;
+}
+
+/* .cert-track { */
+  /* display: flex;
+  gap: 20px; */
   /* width: max-content; */
   /* color: black; */
-  color: whitesmoke;
-}
+  /* color: whitesmoke; */
+/* } */
 
 .certify h2 {
   color: white;
@@ -52,13 +76,22 @@ body {
 
 /* IMAGE */
 .cert-track img {
-  width: 150px;        /* hampir full layar */
-  max-width: 200px;   /* batas biar gak kegedean di PC */
+  width: 150px;
+  max-width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.377);
+}
+
+
+/* .cert-track img {
+  width: 150px;
+  max-width: 200px;
   height: 200px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.5);
   border: 1px solid white;
-}
+} */
 
 /* HOVER EFFECT */
 .cert-track img:hover {
@@ -114,8 +147,8 @@ html {
 /* =============================== */
 @media (max-width: 768px) {
   body {
-    /* margin: 0; */
-    /* width: 100%; */
+    margin: 0;
+    width: 100%;
     background: linear-gradient(90deg,
     red,
     grey,
@@ -173,13 +206,13 @@ html {
   }
   
   /* IMAGE */
-  .cert-track img {
-    /* width: 120px;  */
-    /* max-width: 170px;  */
+  /* .cert-track img {
+    width: 150px; 
+    max-width: 170px; 
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(200,100,0,0.5);
     border: 1px solid rgba(231, 7, 7, 0.562);
-  }
+  } */
 
   .section {
     justify-content: center;
@@ -201,34 +234,6 @@ html {
     border: none;
     height: 3px;
     background: #868686;
-  }
-
-
-  /* TAMBAHAN BARU */
-  html,
-  body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* .cert-container {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  } */
-
-  .cert-track {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .section,
-  .section ul,
-  .section li {
-    max-width: 100%;
-    box-sizing: border-box;
   }
 
 }
