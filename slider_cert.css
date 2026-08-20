@@ -203,4 +203,32 @@ html {
     background: #868686;
   }
 
+
+  /* TAMBAHAN BARU */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* .cert-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  } */
+
+  .cert-track {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .section,
+  .section ul,
+  .section li {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
 }
