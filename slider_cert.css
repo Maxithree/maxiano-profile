@@ -114,35 +114,29 @@ html {
 /* =============================== */
 @media (max-width: 768px) {
   body {
-    margin: 0;
-    width: 100%;
+    /* margin: 0; */
+    /* width: 100%; */
     background: linear-gradient(90deg,
     red,
     grey,
     blue,
     white
     );
-    /* background: rgba(23, 94, 41, 0.925) !important; */
   }
 
   .cert-container {
     overflow: hidden;
-    /* width: 100%; */
     box-sizing: border-box;
-
     display: flex;
-    justify-content: center;   /* center horizontal */
+    justify-content: center;
     align-items: center;
-    /* height: 80px; */
   }
 
-  .section h2 { /* untuk pengaturan gars */
-    /* margin-left: 29px; */
+  .section h2 { 
     max-width: 85%;
     width: auto;
     padding: 5px 20px;
     background: black;
-    /* border-bottom: 5px solid rgb(37, 37, 37); */
     font-size: .9rem;
     color: rgb(253, 253, 22);
   }
@@ -165,7 +159,6 @@ html {
   }
 
   h2 {
-    /* background: rgb(151, 78, 78); */
     margin-left: 5px;
     max-width: 100%;
     width: auto;
@@ -181,9 +174,8 @@ html {
   
   /* IMAGE */
   .cert-track img {
-    width: 120px;        /* hampir full layar */
-    max-width: 170px;   /* batas biar gak kegedean di PC */
-    height: 180px;
+    /* width: 120px;  */
+    /* max-width: 170px;  */
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(200,100,0,0.5);
     border: 1px solid rgba(231, 7, 7, 0.562);
@@ -199,7 +191,6 @@ html {
     padding: 10px;
     box-sizing: border-box;
     border-radius: 15px;
-    /* height: 100px; */
   }
 
   .section ul li {
@@ -210,6 +201,6 @@ html {
     border: none;
     height: 3px;
     background: #868686;
-    /* margin: 20px 0; */
   }
+
 }
