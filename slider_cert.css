@@ -145,23 +145,23 @@ html {
     color: rgb(253, 253, 22);
   }
 
-  .section ul {
+  /* .section ul {
   width: 100%;
   margin: 0;
   padding: 0 10px;
   box-sizing: border-box;
   text-align: left;
-}
+} */
 
-  /* .section ul {
+  .section ul {
     width: 100%;
     margin-left: 0px;
     text-align: left;
     text-align: justify;
     hyphens: auto;
-  } */
+  }
 
-  .section li {
+  /* .section li {
   width: 100%;
   margin: 0;
   padding: 8px 5px;
@@ -170,16 +170,16 @@ html {
   line-height: 1.5;
   text-align: justify;
   hyphens: auto;
-}
+} */
 
-  /* .section li {
+  .section li {
     width:100%;
     padding:8px 15px;
     box-sizing:border-box;
     font-size: 1rem;
     hyphens: auto;
     margin-left: 10px;
-  } */
+  }
 
   h2 {
     margin-left: 5px;
