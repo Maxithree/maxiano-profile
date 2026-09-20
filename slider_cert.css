@@ -184,14 +184,6 @@ html {
     color: rgb(253, 253, 22);
   }
 
-  /* .section ul {
-  width: 100%;
-  margin: 0;
-  padding: 0 10px;
-  box-sizing: border-box;
-  text-align: left;
-} */
-
   .section ul {
     width: 100%;
     margin-left: 0px;
@@ -200,17 +192,7 @@ html {
     hyphens: auto;
   }
 
-  /* .section li {
-  width: 100%;
-  margin: 0;
-  padding: 8px 5px;
-  box-sizing: border-box;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: justify;
-  hyphens: auto;
-} */
-
+  
   .section li {
     width:100%;
     padding:8px 15px;
@@ -254,6 +236,17 @@ html {
     border: none;
     height: 3px;
     background: #868686;
+  }
+
+
+  .demo-button {
+    background: linear-gradient(90deg,
+    rgb(74, 75, 73),
+    rgb(167, 4, 4),
+    rgb(174, 236, 2)
+    );
+    color: #fae779 !important;
+    font-size: .8rem;
   }
 
 }
