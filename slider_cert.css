@@ -117,6 +117,7 @@ html {
   list-style: none;
   text-align: left !important;
   margin-top: -10px;
+  margin-left: -20px !important;
 }
 
 .demo-button {
@@ -239,6 +240,11 @@ html {
   }
 
 
+  .demo-video {
+    margin-left: -20px !important;
+    font-size: 13px !important;
+  }
+
   .demo-button {
     background: linear-gradient(90deg,
     rgb(74, 75, 73),
@@ -246,7 +252,8 @@ html {
     rgb(174, 236, 2)
     );
     color: #fae779 !important;
-    font-size: .8rem;
+    font-size: .7rem;
+    margin-top: 10px;
   }
 
 }
