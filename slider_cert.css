@@ -110,6 +110,45 @@ html {
 
 
 
+/* =============================== */
+/* PROJECT DEMO BUTTON             */
+/* =============================== */
+.demo-video {
+  list-style: none;
+  text-align: left !important;
+  margin-top: -10px;
+}
+
+.demo-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 28px;
+  
+  background: linear-gradient(90deg,
+  rgb(74, 75, 73),
+  rgb(126, 124, 124),
+  rgb(174, 236, 2)
+  );
+  
+  /* background: black; */
+  color: #fae779 !important;
+  border: 2px solid #ffd900a8;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.demo-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
+  background: #222;
+}
+
+
+
 
 
 
