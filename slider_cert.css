@@ -117,7 +117,7 @@ html {
   list-style: none;
   text-align: left !important;
   margin-top: -10px;
-  margin-left: -20px !important;
+  margin-left: 15px !important;
 }
 
 .demo-button {
@@ -148,6 +148,55 @@ html {
   background: #222;
 }
 
+
+/* ===================================== */
+/* WORDPRESS & PHP WEBSITE DEVELOPMENT  */
+/* ===================================== */
+.wordpress-section {
+  position: relative;
+}
+
+.wordpress-section h2 {
+  color: rgb(253, 253, 22);
+}
+
+/* .wordpress-section ul {
+  list-style-position: inside;
+} */
+
+
+/* WORDPRESS DEMO - LEFT ALIGNMENT */
+.wordpress-demo-container {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 0;
+  box-sizing: border-box;
+  margin-top: -25px;
+  list-style: none;
+}
+
+.wordpress-demo-container .demo-button {
+  margin-left: 23px !important;
+  list-style: none;
+  margin-top: 4px !important;
+}
+
+
+
+/* .wordpress-demo-container {
+  display: block;
+  width: 100%;
+  text-align: left !important;
+  padding-left: 203px;
+  box-sizing: border-box;
+  margin-top: -58px !important;
+  list-style: none;
+}
+
+.wordpress-demo-container .demo-button {
+  margin-left: 0 !important;
+} */
 
 
 
